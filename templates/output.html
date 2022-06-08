@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Transliteration keyboard</title>
+</head>
+
+<body>
+    <h1>Suggestions</h1>
+    <form method="POST" action="/">
+        <select name="suggestions">
+            {% for opt in op %}
+            <option value="{{opt}}" SELECTED>{{opt}}</option>"
+            {% endfor %}
+        </select>
+    </form>
+</body>
+
+</html>
