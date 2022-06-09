@@ -7,13 +7,23 @@
 
 <body>
     <h1>Suggestions</h1>
-    <form method="POST" action="/">
+    <form method="POST" action="/result">
         <select name="suggestions">
             {% for opt in op %}
             <option value="{{opt}}" SELECTED>{{opt}}</option>"
             {% endfor %}
         </select>
+        <br />
+        <input type="submit" value="Save"> 
     </form>
-</body>
 
+    <br />
+    
+    <form method="POST" action="/clear">
+        <input type="submit" value="Clear">
+    </form>
+    <a href="/static/myresult.txt">
+        <button>Done</button>
+      </a>
+</body>
 </html>
